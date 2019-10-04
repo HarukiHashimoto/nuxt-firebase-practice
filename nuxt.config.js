@@ -31,6 +31,7 @@ export default {
   */
   plugins: [
     "@/plugins/firebase/firebase",
+    "@/plugins/vee-validate.js",
   ],
   /*
   ** Nuxt.js dev-modules
