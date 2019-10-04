@@ -24,12 +24,13 @@ export default {
   ** Global CSS
   */
   css: [
+    { src: '~/assets/sass/app.scss', lang: 'scss' },
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "@/plugins/firebase",
+    "@/plugins/firebase/firebase",
   ],
   /*
   ** Nuxt.js dev-modules
@@ -41,7 +42,7 @@ export default {
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    ['nuxt-buefy', { css: false }],
     '@nuxtjs/dotenv',
   ],
   /*
