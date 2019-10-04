@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 export default {
   mode: 'universal',
@@ -28,6 +29,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "@/plugins/firebase",
   ],
   /*
   ** Nuxt.js dev-modules
@@ -40,6 +42,7 @@ export default {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Build configuration
