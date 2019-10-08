@@ -1,7 +1,7 @@
 <template lang="pug">
   div.home
     Navigation
-    nuxt-router-link
+    nuxt
 </template>
 <script>
 import Navigation from "@/components/Navigation.vue";
